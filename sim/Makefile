@@ -2,10 +2,12 @@ SHELL=/bin/bash -o pipefail
 .SHELLFLAGS += -e
 
 # PKG_SRCS  := $(PWD)/../pkg/types.sv
-HDL_SRCS  := $(shell find $(PWD)/../hdl -name '*.v')
-COMM_HVL  := $(shell find $(PWD)/../hvl/common                -name '*.sv' -o -name '*.v' -o -name '*.o' -o -name '*.so')
-VCS_HVL   := $(COMM_HVL) $(shell find $(PWD)/../hvl/vcs       -name '*.sv' -o -name '*.v' -o -name '*.o' -o -name '*.so')
-VER_HVL   :=
+HDL_SRCS_V  := $(shell find $(PWD)/../hdl -name '*.v')
+HDL_SRCS_SV	:= $(shell find $(PWD)/../hdl -name '*.sv')
+HDL_SRCS	:= $(HDL_SRCS_V) $(HDL_SRCS_SV)
+COMM_HVL  	:= $(shell find $(PWD)/../hvl/common                -name '*.sv' -o -name '*.v' -o -name '*.o' -o -name '*.so')
+VCS_HVL   	:= $(COMM_HVL) $(shell find $(PWD)/../hvl/vcs       -name '*.sv' -o -name '*.v' -o -name '*.o' -o -name '*.so')
+VER_HVL   	:=
 # SRAM_SRCS := $(shell find $(PWD)/../sram/output -name '*.v')
 HDRS      := $(shell find $(PWD)/../hvl -name '*.svh')
 DW_IP     :=

@@ -5,7 +5,7 @@ module top_tb;
     initial begin
         $fsdbDumpfile("dump.fsdb");
         if ($test$plusargs("NO_DUMP_ALL_ECE411")) begin
-            $fsdbDumpvars(0, dut, "+all");
+            $fsdbDumpvars(0, dut_pl, "+all");
             $fsdbDumpoff();
         end else begin
             $fsdbDumpvars(0, "+all");
@@ -16,23 +16,23 @@ module top_tb;
     // TODO: Declare cache port signals:
     //---------------------------------------------------------------------------------
 
-    logic           clk0,csb0,web0; // web0: 0 for write, 1 for read
+    logic           clk,csb0,web0; // web0: 0 for write, 1 for read
     logic   [3:0]   addr0;
     logic   [31:0]  wmask0;
-    logic   [255:0] din0,dout0;
+    logic   [255:0] din0, dout0_pl, dout0_py, dout0_golden;
 
     //---------------------------------------------------------------------------------
     // TODO: Generate a clock:
     //---------------------------------------------------------------------------------
 
-    always #1ns clk0 = ~clk0;
+    always #1ns clk = ~clk;
 
     //---------------------------------------------------------------------------------
     // TODO: Write a task to generate reset:
     //---------------------------------------------------------------------------------
 
     task reset();
-        clk0 = 1'b0;
+        clk = 1'b0;
         csb0 = 1'b0;
         web0 = 1'b1;
         wmask0 = '0;
@@ -44,10 +44,38 @@ module top_tb;
     // TODO: Instantiate the DUT and physical memory:
     //---------------------------------------------------------------------------------
 
-    mp_cache_data_array dut(.*);
+    mp_cache_data_array_pl  dut_pl(
+        .*,
+        .dout0(dout0_pl)
+    );
+
+    mp_cache_data_array_py  dut_py(
+        .*,
+        .dout0(dout0_py)
+    );
+
+    mp_cache_data_array     golden(
+        .*,
+        .clk0(clk),
+        .dout0(dout0_golden)
+    );
+
     //---------------------------------------------------------------------------------
     // TODO: Write tasks to test various functionalities:
     //---------------------------------------------------------------------------------
+
+    // assertion stuff
+    property pl_eq_golden;
+        @(posedge clk) dout0_pl === dout0_golden;
+    endproperty
+
+    property py_eq_golden;
+        @(posedge clk) dout0_py === dout0_golden;
+    endproperty
+
+    // assertion at every cycle: check if output identical
+    assert property (pl_eq_golden) else $fatal ("\033[31mpl o/p wrong\033[0m") /* some label */;
+
 
     task write(
         input   logic   [3:0]   addr,
@@ -60,7 +88,7 @@ module top_tb;
         wmask0 = wmask;
         din0 = din;
 
-        @(posedge clk0);
+        @(posedge clk);
         
     endtask
 
@@ -73,7 +101,7 @@ module top_tb;
         wmask0 = '0;
         din0 = '0;
 
-        @(posedge clk0);
+        @(posedge clk);
         
     endtask
 
@@ -85,7 +113,7 @@ module top_tb;
         reset();
         write('0, '1, '1);
         write('1, '1, '1);
-        repeat (5) @(posedge clk0);
+        repeat (5) @(posedge clk);
         $finish;
     end
 

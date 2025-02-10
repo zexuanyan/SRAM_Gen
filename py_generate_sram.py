@@ -31,7 +31,7 @@ if __name__ == "__main__":
             print(config)
 
             # start populating the file
-            with open ("hdl/mp_cache_data_array.sv", 'w') as sv_file:
+            with open ("hdl/mp_cache_data_array_py.sv", 'w') as sv_file:
 
                 # write header information
                 sv_file.write(header)
@@ -40,7 +40,7 @@ if __name__ == "__main__":
                     sv_file.write(f"// {key}: {config[key]} \n")
 
                 # start populating the module:
-                sv_file.write("module mp_cache_data_array\n#(\n")
+                sv_file.write("module mp_cache_data_array_py\n#(\n")
 
                 # calculate params and add them
                 data_width = int(config["word_size"])
@@ -120,12 +120,14 @@ if __name__ == "__main__":
                     # separate ports with new lines
                     sv_file.write("\n")
                 # add the int for loop
+                sv_file.write(f"{logic_header}[DATA_WIDTH-1: 0]\tmem [RAM_DEPTH];\n")
                 sv_file.write("\tinteger\t i; \n")
+                
 
 
                 # generate latch logic
                 sv_file.write("\n\n\t// latch input value")
-                sv_file.write("\n\talways @ (posedge clk) begin\n")
+                sv_file.write("\n\talways_ff @ (posedge clk) begin\n")
                 for port_idx in range (config["num_rw_ports"]):
                     sv_file.write(f"\t\tif (!csb{port_idx}) begin\n")
                     sv_file.write(f"\t\t\tweb{port_idx}_reg <= web{port_idx};\n")
@@ -136,7 +138,7 @@ if __name__ == "__main__":
                 sv_file.write("\tend\n\n\n")
 
                 # generate write logic
-                sv_file.write("\n\talways @ (posedge clk) begin\n")
+                sv_file.write("\n\talways_ff @ (posedge clk) begin\n")
                 for port_idx in range (config["num_rw_ports"]):
                     sv_file.write(f"\t\tif (!web{port_idx}_reg) begin\n")
 

@@ -4,7 +4,7 @@
 // write_size: 8 
 // num_words: 16 
 // random_init: False 
-module mp_cache_data_array
+module mp_cache_data_array_py
 #(
 	parameter NUM_WMASKS = 32,
 	parameter DATA_WIDTH = 256,
@@ -30,11 +30,12 @@ module mp_cache_data_array
 	logic	[ADDR_WIDTH-1: 0]	addr0_reg;
 	logic	[DATA_WIDTH-1: 0]	din0_reg;
 	logic	[DATA_WIDTH-1: 0]	dout0_reg;
+	logic	[DATA_WIDTH-1: 0]	mem [RAM_DEPTH];
 	integer	 i; 
 
 
 	// latch input value
-	always @ (posedge clk) begin
+	always_ff @ (posedge clk) begin
 		if (!csb0) begin
 			web0_reg <= web0;
 			wmask0_reg <= wmask0;
@@ -45,7 +46,7 @@ module mp_cache_data_array
 
 
 
-	always @ (posedge clk) begin
+	always_ff @ (posedge clk) begin
 		if (!web0_reg) begin
 			if (wmask0_reg[0]) 
 				mem[addr0_reg][7:0] <= din0_reg[7:0];
