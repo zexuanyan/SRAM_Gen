@@ -1,0 +1,9 @@
+#@ # 
+#@ # Running lc_shell Version W-2024.09 for linux64 -- Aug 25, 2024
+#@ # Date:   Sat Feb  8 08:16:30 2025
+#@ # Run by: zexuany2@eceb-2022-17.ews.illinois.edu
+#@ 
+
+read_lib output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db
+read_lib output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C.lib
+quit

@@ -1,0 +1,120 @@
+ 
+                             Library Compiler (TM)
+                                 DesignWare (R)
+
+                  Version W-2024.09 for linux64 - Aug 26, 2024
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Initializing...
+lc_shell> read_lib output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db
+Reading '/home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db' ...
+Error: Line 1, The 'c'h' attribute/group name cannot be specified here. (LBDB-76)
+Error: Line 4, The '®Ü_ÿhš' attribute/group name cannot be specified here. (LBDB-76)
+Error: Line 6, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 6 at or near ':'. (PARSE-1)
+Error: Line 6, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 6 at or near ')'. (PARSE-1)
+Error: Line 7, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 7 at or near ')'. (PARSE-1)
+Error: Line 9, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 9 at or near ')'. (PARSE-1)
+Error: Line 10, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 10 at or near '='. (PARSE-1)
+Error: Line 11, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 11 at or near ')'. (PARSE-1)
+Error: Line 14, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 14 at or near ')'. (PARSE-1)
+Error: Line 19, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 19 at or near '}'. (PARSE-1)
+Error: Line 20, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 20 at or near ')'. (PARSE-1)
+Error: Line 21, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 21 at or near ')'. (PARSE-1)
+Error: Line 24, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 24 at or near ')'. (PARSE-1)
+Error: Line 25, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 25 at or near ')'. (PARSE-1)
+Error: Line 25, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 25 at or near ')'. (PARSE-1)
+Error: Line 29, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 29 at or near ')'. (PARSE-1)
+Error: Line 32, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 32 at or near ')'. (PARSE-1)
+Error: Line 34, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 34 at or near ':'. (PARSE-1)
+Error: Line 34, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 34 at or near '}'. (PARSE-1)
+Error: Line 34, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 34 at or near '}'. (PARSE-1)
+Error: Line 34, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 34 at or near '}'. (PARSE-1)
+Error: Line 34, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 34 at or near '}'. (PARSE-1)
+Error: Line 34, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 34 at or near '='. (PARSE-1)
+Error: Line 35, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 35 at or near '}'. (PARSE-1)
+Error: Line 37, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 37 at or near ')'. (PARSE-1)
+Error: Line 38, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 38 at or near ')'. (PARSE-1)
+Error: Line 38, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 38 at or near ')'. (PARSE-1)
+Error: Line 38, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 38 at or near ')'. (PARSE-1)
+Error: Line 39, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 39 at or near '}'. (PARSE-1)
+Error: Line 40, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 40 at or near ':'. (PARSE-1)
+Error: Line 43, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 43 at or near '}'. (PARSE-1)
+Error: Line 45, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 45 at or near ')'. (PARSE-1)
+Error: Line 46, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 46 at or near ')'. (PARSE-1)
+Error: Line 47, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 47 at or near '}'. (PARSE-1)
+Error: Line 48, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 48 at or near '}'. (PARSE-1)
+Error: Line 49, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 49 at or near '}'. (PARSE-1)
+Error: Line 49, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 49 at or near '}'. (PARSE-1)
+Error: Line 53, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 53 at or near '}'. (PARSE-1)
+Error: Line 53, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 53 at or near '}'. (PARSE-1)
+Error: Line 53, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 53 at or near ')'. (PARSE-1)
+Error: Line 53, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 53 at or near '}'. (PARSE-1)
+Error: Line 54, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: missing quote termination on line 54 at or near 'ê'. (PARSE-1)
+Error: Line 54, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 54 at or near ')'. (PARSE-1)
+Error: Line 85, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 85 at or near '='. (PARSE-1)
+Error: Line 87, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 87 at or near '}'. (PARSE-1)
+Error: Line 87, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 87 at or near ')'. (PARSE-1)
+Error: Line 88, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 88 at or near '}'. (PARSE-1)
+Error: Line 88, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 88 at or near ')'. (PARSE-1)
+Error: Line 89, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 89 at or near ')'. (PARSE-1)
+Error: Line 91, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 91 at or near ')'. (PARSE-1)
+Error: Line 91, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 91 at or near ')'. (PARSE-1)
+Error: Line 92, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 92 at or near '}'. (PARSE-1)
+Error: Line 92, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 92 at or near ')'. (PARSE-1)
+Error: Line 96, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 96 at or near '}'. (PARSE-1)
+Error: Line 96, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 96 at or near '}'. (PARSE-1)
+Error: Line 96, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 96 at or near '}'. (PARSE-1)
+Error: Line 96, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 96 at or near '}'. (PARSE-1)
+Error: Line 96, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 96 at or near ')'. (PARSE-1)
+Error: Line 97, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 97 at or near ')'. (PARSE-1)
+Error: Line 100, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 100 at or near ')'. (PARSE-1)
+Error: Line 100, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 100 at or near ')'. (PARSE-1)
+Error: Line 100, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 100 at or near ')'. (PARSE-1)
+Error: Line 100, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 100 at or near ')'. (PARSE-1)
+Error: Line 101, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 101 at or near ')'. (PARSE-1)
+Error: Line 101, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 101 at or near '}'. (PARSE-1)
+Error: Line 107, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 107 at or near '}'. (PARSE-1)
+Error: Line 107, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 107 at or near '='. (PARSE-1)
+Error: Line 111, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 111 at or near '}'. (PARSE-1)
+Error: Line 125, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 125 at or near ':'. (PARSE-1)
+Error: Line 130, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 130 at or near '}'. (PARSE-1)
+Error: Line 132, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 132 at or near '}'. (PARSE-1)
+Error: Line 132, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 132 at or near '}'. (PARSE-1)
+Error: Line 133, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 133 at or near ')'. (PARSE-1)
+Error: Line 133, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 133 at or near ')'. (PARSE-1)
+Error: Line 134, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 134 at or near ')'. (PARSE-1)
+Error: Line 136, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 136 at or near ')'. (PARSE-1)
+Error: Line 136, /home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C_lib.db: syntax error on line 137 at or near '<EOF>'. (PARSE-1)
+Error: Line 136, A syntax error is found before the library or phys_library group.
+        The compilation is terminated. (LBDB-153)
+0
+lc_shell> read_lib output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C.lib
+Reading '/home/zexuany2/Desktop/411_CA/sram/output/mp_cache_data_array/mp_cache_data_array_TT_1p0V_25C.lib' ...
+Warning: Line 1, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
+        No default can be applied to this attribute. (LBDB-366)
+Information: Line 82, Cell 'mp_cache_data_array', The cell 'mp_cache_data_array' contiains memory/memory_read/memory_write groups which are deprecated, use the is_memory_cell attribute instead. (LIBG-280)
+Technology library 'mp_cache_data_array_TT_1p0V_25C_lib' read successfully
+1
+lc_shell> quit
+Maximum memory usage for this session: 93.20 MB
+CPU usage for this session:      1 seconds (  0.00 hours)
+Elapsed time for this session:   1471 seconds (  0.41 hours)
+Thank you for using Library Compiler.
+

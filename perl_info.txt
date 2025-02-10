@@ -1,0 +1,158 @@
+Summary of my perl5 (revision 5 version 26 subversion 3) configuration:
+   
+  Platform:
+    osname=linux
+    osvers=4.18.0-305.25.1.el8_4.x86_64
+    archname=x86_64-linux-thread-multi
+    uname='linux x86-64-02.build.eng.rdu2.redhat.com 4.18.0-305.25.1.el8_4.x86_64 #1 smp mon oct 18 14:34:11 edt 2021 x86_64 x86_64 x86_64 gnulinux '
+    config_args='-des -Doptimize=none -Dccflags=-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -Dldflags=-Wl,-z,relro  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -Dccdlflags=-Wl,--enable-new-dtags -Wl,-z,relro  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -Dlddlflags=-shared -Wl,-z,relro  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -Dshrpdir=/usr/lib64 -DDEBUGGING=-g -Dversion=5.26.3 -Dmyhostname=localhost -Dperladmin=root@localhost -Dcc=gcc -Dcf_by=Red Hat, Inc. -Dprefix=/usr -Dvendorprefix=/usr -Dsiteprefix=/usr/local -Dsitelib=/usr/local/share/perl5 -Dsitearch=/usr/local/lib64/perl5 -Dprivlib=/usr/share/perl5 -Dvendorlib=/usr/share/perl5/vendor_perl -Darchlib=/usr/lib64/perl5 -Dvendorarch=/usr/lib64/perl5/vendor_perl -Darchname=x86_64-linux-thread-multi -Dlibpth=/usr/local/lib64 /lib64 /usr/lib64 -Duseshrplib -Dusethreads -Duseithreads -Dusedtrace=/usr/bin/dtrace -Duselargefiles -Dd_semctl_semun -Di_db -Ui_ndbm -Di_gdbm -Di_shadow -Di_syslog -Dman3ext=3pm -Duseperlio -Dinstallusrbinperl=n -Ubincompat5005 -Uversiononly -Dpager=/usr/bin/less -isr -Dd_gethostent_r_proto -Ud_endhostent_r_proto -Ud_sethostent_r_proto -Ud_endprotoent_r_proto -Ud_setprotoent_r_proto -Ud_endservent_r_proto -Ud_setservent_r_proto -Dscriptdir=/usr/bin -Dusesitecustomize -Duse64bitint'
+    hint=recommended
+    useposix=true
+    d_sigaction=define
+    useithreads=define
+    usemultiplicity=define
+    use64bitint=define
+    use64bitall=define
+    uselongdouble=undef
+    usemymalloc=n
+    default_inc_excludes_dot=define
+    bincompat5005=undef
+  Compiler:
+    cc='gcc'
+    ccflags ='-D_REENTRANT -D_GNU_SOURCE -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fwrapv -fno-strict-aliasing -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    optimize='  -g'
+    cppflags='-D_REENTRANT -D_GNU_SOURCE -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fwrapv -fno-strict-aliasing -I/usr/local/include'
+    ccversion=''
+    gccversion='8.5.0 20210514 (Red Hat 8.5.0-18)'
+    gccosandvers=''
+    intsize=4
+    longsize=8
+    ptrsize=8
+    doublesize=8
+    byteorder=12345678
+    doublekind=3
+    d_longlong=define
+    longlongsize=8
+    d_longdbl=define
+    longdblsize=16
+    longdblkind=3
+    ivtype='long'
+    ivsize=8
+    nvtype='double'
+    nvsize=8
+    Off_t='off_t'
+    lseeksize=8
+    alignbytes=8
+    prototype=define
+  Linker and Libraries:
+    ld='gcc'
+    ldflags ='-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -fstack-protector-strong -L/usr/local/lib'
+    libpth=/usr/local/lib64 /lib64 /usr/lib64 /usr/local/lib /usr/lib /lib/../lib64 /usr/lib/../lib64 /lib
+    libs=-lpthread -lresolv -lgdbm -ldb -ldl -lm -lcrypt -lutil -lc -lgdbm_compat
+    perllibs=-lpthread -lresolv -ldl -lm -lcrypt -lutil -lc
+    libc=libc-2.28.so
+    so=so
+    useshrplib=true
+    libperl=libperl.so
+    gnulibc_version='2.28'
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs
+    dlext=so
+    d_dlsymun=undef
+    ccdlflags='-Wl,--enable-new-dtags -Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld'
+    cccdlflags='-fPIC'
+    lddlflags='-lpthread -shared -Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -L/usr/local/lib -fstack-protector-strong'
+
+
+Characteristics of this binary (from libperl): 
+  Compile-time options:
+    HAS_TIMES
+    MULTIPLICITY
+    PERLIO_LAYERS
+    PERL_COPY_ON_WRITE
+    PERL_DONT_CREATE_GVSV
+    PERL_IMPLICIT_CONTEXT
+    PERL_MALLOC_WRAP
+    PERL_OP_PARENT
+    PERL_PRESERVE_IVUV
+    USE_64_BIT_ALL
+    USE_64_BIT_INT
+    USE_ITHREADS
+    USE_LARGE_FILES
+    USE_LOCALE
+    USE_LOCALE_COLLATE
+    USE_LOCALE_CTYPE
+    USE_LOCALE_NUMERIC
+    USE_LOCALE_TIME
+    USE_PERLIO
+    USE_PERL_ATOF
+    USE_REENTRANT_API
+    USE_SITECUSTOMIZE
+  Locally applied patches:
+    Fedora Patch1: Removes date check, Fedora/RHEL specific
+    Fedora Patch3: support for libdir64
+    Fedora Patch4: use libresolv instead of libbind
+    Fedora Patch5: USE_MM_LD_RUN_PATH
+    Fedora Patch6: Provide MM::maybe_command independently (bug #1129443)
+    Fedora Patch7: Dont run one io test due to random builder failures
+    Fedora Patch15: Define SONAME for libperl.so
+    Fedora Patch16: Install libperl.so to -Dshrpdir value
+    Fedora Patch22: Document Math::BigInt::CalcEmu requires Math::BigInt (CPAN RT#85015)
+    Fedora Patch26: Make *DBM_File desctructors thread-safe (RT#61912)
+    Fedora Patch27: Make PadlistNAMES() lvalue again (CPAN RT#101063)
+    Fedora Patch30: Replace EU::MakeMaker dependency with EU::MM::Utils in IPC::Cmd (bug #1129443)
+    Fedora Patch31: Make File::Glob more resistant against degenerative matching (RT#131211)
+    Fedora Patch36: Fix glob UTF-8 flag on a glob reassignment (RT#131263)
+    Fedora Patch38: Fix handling backslashes in PATH environment variable when executing "perl -S" (RT#129183)
+    Fedora Patch45: Fix File::Glob rt131211.t test random failures
+    Fedora Patch46: Fix t/op/hash.t test random failures
+    Fedora Patch47: Parse caret variables with subscripts as normal variables inside ${...} escaping (RT#131664)
+    Fedora Patch49: Do not display too many bytes when reporting malformed UTF-8 character
+    Fedora Patch51: Fix error message for "our sub foo::bar" (RT#131679)
+    Fedora Patch52: Fix executing arybase::_tie_it() in Safe compartement (RT#131588)
+    Fedora Patch54: Fix splitting non-ASCII strings if unicode_strings feature is enabled (RT#130907)
+    Fedora Patch55: Fix compiler warnings in code generated by ExtUtils::Constant (CPAN RT#63832)
+    Fedora Patch56: Fix compiler warnings in code generated by ExtUtils::Constant (CPAN RT#101487)
+    Fedora Patch58: Fix unreliable Time-HiRes tests (CPAN RT#122819)
+    Fedora Patch61: Fix Term::ReadLine not to create spurious &STDERR files (RT#132008)
+    Fedora Patch64: Fix an overflow when parsing a character range with no preceding character (RT#132245)
+    Fedora Patch65: Fix walking symbol table for ISA in Carp
+    Fedora Patch66: Fix handling file names with null bytes in stat and lstat functions (RT#131895)
+    Fedora Patch67: Fix a crash when untying an object witout a stash
+    Fedora Patch68: Fix deparsing of transliterations with unprintable characters (RT#132405)
+    Fedora Patch69: Fix error reporting on do() on a directory (RT#125774)
+    Fedora Patch70: Fix stack manipulation when a lexical subroutine is defined in a do block in a member of an iteration list (RT#132442)
+    Fedora Patch71: Fix setting $! when statting a closed filehandle (RT#108288)
+    Fedora Patch72: Fix tainting of s/// with overloaded replacement (RT#115266)
+    Fedora Patch73: Expand system() arguments before a fork (RT#121105)
+    Fedora Patch76: Avoid undefined behavior when copying memory in Glob and pp_caller (RT#131746)
+    Fedora Patch78: Fix compatibility with libxcrypt (RT#133184)
+    Fedora Patch79: Link XS modules to pthread library to fix linking with -z defs
+    Fedora Patch80: Fix parsing braced subscript after parentheses (RT#8045)
+    Fedora Patch81: Do not clobber file bytes in :encoding layer (RT#132833)
+    Fedora Patch82: Fix line numbers in multi-line s/// (RT#131930)
+    Fedora Patch83: Fix parsing extended bracketed character classes (RT#132167)
+    Fedora Patch84: Fix a possibly unitialized memory read in the Perl parser (RT#133074)
+    Fedora Patch85: Fix an infinite loop in the regular expression compiler (RT#133185)
+    Fedora Patch86: Adjust tests to gdbm-1.15 (RT#133295)
+    Fedora Patch88: Fix printing a warning about a wide character when matching a regular expression while ISO-8859-1 locale is in effect
+    Fedora Patch89: Fix invoking a check for wide characters while ISO-8859-1 locale is in effect
+    Fedora Patch90: Pass the correct CFLAGS to dtrace
+    RHEL Patch91: Fix Time-Local tests to pass after year 2019 (bug #1807120)
+    RHEL Patch92: Fix CVE-2020-12723 (GH#16947)
+    RHEL Patch93: Fix CVE-2020-10543
+    RHEL Patch94: Fix CVE-2020-10878
+    RHEL Patch95: Fix Net-Ping _resolv return value on failing DNS name lookup (bug #1973030)
+    RHEL Patch97: Fix a memory leak when compiling a regular expression with a non-word class (GH#17218)
+    Fedora Patch200: Link XS modules to libperl.so with EU::CBuilder on Linux
+    Fedora Patch201: Link XS modules to libperl.so with EU::MM on Linux
+    Fedora Patch202: Add definition of OPTIMIZE to .ph files (bug #2152012)
+  Built under linux
+  Compiled at Jan 17 2023 10:57:52
+  @INC:
+    /usr/local/lib64/perl5
+    /usr/local/share/perl5
+    /usr/lib64/perl5/vendor_perl
+    /usr/share/perl5/vendor_perl
+    /usr/lib64/perl5
+    /usr/share/perl5
