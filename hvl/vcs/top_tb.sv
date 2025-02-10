@@ -1,4 +1,6 @@
 module top_tb;
+
+    `include "rand.svh"
     //---------------------------------------------------------------------------------
     // Waveform generation.
     //---------------------------------------------------------------------------------
@@ -16,10 +18,12 @@ module top_tb;
     // TODO: Declare cache port signals:
     //---------------------------------------------------------------------------------
 
+    RandReq random_request = new();
     logic           clk,csb0,web0; // web0: 0 for write, 1 for read
     logic   [3:0]   addr0;
     logic   [31:0]  wmask0;
     logic   [255:0] din0, dout0_pl, dout0_py, dout0_golden;
+    integer         i;
 
     //---------------------------------------------------------------------------------
     // TODO: Generate a clock:
@@ -65,16 +69,39 @@ module top_tb;
     //---------------------------------------------------------------------------------
 
     // assertion stuff
-    property pl_eq_golden;
-        @(posedge clk) dout0_pl === dout0_golden;
-    endproperty
+    always @(posedge clk) begin : assertions
+        pl_eq_golden: assert (dout0_pl === dout0_golden) else begin
+            $display("dout0_pl = %x, dout0_golden = %x", dout0_pl, dout0_golden);
+            $fatal("\033[31mAssertion failed: dout0_pl != dout0_golden\033[0m");
+        end
 
-    property py_eq_golden;
-        @(posedge clk) dout0_py === dout0_golden;
-    endproperty
+        py_eq_golden: assert (dout0_py === dout0_golden) else begin
+            $display("dout0_py = %x, dout0_golden = %x", dout0_py, dout0_golden);
+            $fatal("\033[31mAssertion failed: dout0_py != dout0_golden\033[0m");
+        end
+    end : assertions
 
-    // assertion at every cycle: check if output identical
-    assert property (pl_eq_golden) else $fatal ("\033[31mpl o/p wrong\033[0m") /* some label */;
+    task read_write(
+        input   logic           r_w,
+        input   logic   [3:0]   addr,
+        input   logic   [31:0]  wmask,
+        input   logic   [255:0] din
+
+    );
+        // 1 for writing, 0 for reading
+        if (r_w) begin
+            web0 = 1'b0;
+            addr0 = addr;
+            wmask0 = wmask;
+            din0 = din;
+        end else begin
+            web0 = 1'b1;
+            addr0 = addr;
+            wmask0 = '0;
+            din0 = '0;
+        end
+
+    endtask
 
 
     task write(
@@ -113,7 +140,17 @@ module top_tb;
         reset();
         write('0, '1, '1);
         write('1, '1, '1);
+
+        for (i = 0; i < 100000; i++) begin
+            random_request.randomize();
+            read_write(random_request.r_w, random_request.rand_addr, 
+                       random_request.rand_wmask, random_request.rand_din);
+            if (i%1000 == 0)
+                $display("processing %d inst", i);
+            @(posedge clk);
+        end
         repeat (5) @(posedge clk);
+        $display("\033[32mSimulation Passed!\033[0m");
         $finish;
     end
 
